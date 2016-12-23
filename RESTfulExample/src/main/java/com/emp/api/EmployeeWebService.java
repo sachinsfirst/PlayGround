@@ -18,6 +18,10 @@ public class EmployeeWebService {
 	
 	private EmployeeService employeeService;
  
+	/**
+	 * @param msg
+	 * @return
+	 */
 	@GET
 	@Path("/echo/{message}")
 	public Response getMsg(@PathParam("param") String msg) {
@@ -28,6 +32,11 @@ public class EmployeeWebService {
  
 	}
 	
+	/**
+	 * @param name
+	 * @param id
+	 * @return
+	 */
 	@POST
 	@Path("/add")
 	@Produces(MediaType.TEXT_HTML)
